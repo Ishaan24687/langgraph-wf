@@ -1,0 +1,17 @@
+[project]
+name = "langgraph-wf"
+version = "0.1.0"
+description = "LangChain + LangGraph lessons over a synthetic healthcare reimbursement database"
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph",
+    "langchain",
+    "langchain-ollama",
+    "pytest",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
